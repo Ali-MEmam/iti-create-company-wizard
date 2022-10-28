@@ -1,9 +1,5 @@
 import { useState } from "react";
 import { Col, Container, Form, Row } from "react-bootstrap";
-import { addNewCompany } from "../APIS/Company";
-import { getAllEmployees } from "../APIS/Employees";
-import { getAllProjects } from "../APIS/Projects";
-import { getAllTasks } from "../APIS/Tasks";
 import CompanyForm from "../components/CompanyForm";
 import ProjectsForm from "../components/ProjectsForm";
 import Result from "../components/Result";

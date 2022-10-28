@@ -8,7 +8,7 @@ const CompanyForm = ({ setCompany, company }) => {
         <Form.Control
           type="email"
           placeholder="facebook@meta.com..."
-          value={company.email}
+          value={company?.email}
           onChange={(e) => setCompany({ ...company, email: e.target.value })}
         />
       </Form.Group>
@@ -17,7 +17,7 @@ const CompanyForm = ({ setCompany, company }) => {
         <Form.Control
           type="password"
           placeholder="Enter password"
-          value={company.password}
+          value={company?.password}
           onChange={(e) => setCompany({ ...company, password: e.target.value })}
         />
       </Form.Group>
