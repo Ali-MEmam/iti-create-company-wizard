@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+}
+.App {
+  background-color: #dfdfdf;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  &-box {
+    background: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 20px 6px #00000033;
+  }
+  &-header {
+    background: #150050;
+    margin: 0 -12px;
+    padding: 12px;
+    border-radius: 6px 6px 0px 0px;
+    height: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-size: 30px;
+      font-weight: bolder;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+  }
+  &-form {
+    color: #000;
+    &__add {
+      width: 100%;
+      margin-top: 20px;
+      border: none;
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 5px;
+    }
+  }
+  &-submit {
+    background: #150050;
+    color: #fff;
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
+
+.selected {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  &:last-of-type {
+    border: none;
+  }
+  &_name {
+    margin: 0;
+  }
+  &_delete {
+    background-color: #fff;
+    border: none;
+    color: red;
+    font-weight: bold;
+  }
+}
+
+.project {
+  background-color: #eee;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  &_title {
+    font-weight: bolder;
+    font-size: 20px;
+  }
+  &_employee {
+    font-size: 18px;
+    &-task {
+      &:not(:first-of-type) {
+        margin: 10px;
+      }
+    }
+  }
+}
